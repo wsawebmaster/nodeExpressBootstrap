@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Listagem
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>Página listagem</h1>
+  <p>
+    <% for(item of lista){ %>
+    <%= item.titulo %> - <%= item.ano_lancamento %> <br />
+    <% } %>
+  </p>
+</body>
+
+</html>
