@@ -15,21 +15,25 @@
 <body>
   <h1>Filmes e Séries - Cadastrar</h1>
 
-  <form method="post" action="/add">
-    <div class="form-group">
-      <label for="titulo">Título</label>
-      <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Informe o título do filme/serie">
-    </div>
-
-    <div class="form-group">
-      <div class="form-group col-md-2">
-        <label for="ano">Ano de lançamento</label>
-        <input type="text" class="form-control" id="ano_lancamento" name="ano_lancamento" placeholder="Ano do filme/serie">
+  <% if(filme.id) { %>
+    <form method="POST" action="/edit/<%= filme.id %>">
+  <% }else{ %>
+    <form method="POST" action="/add">
+  <% } %>
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Informe o título do filme/serie" value="<%= filme.titulo %>">
       </div>
-    </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
-  </form>
+      <div class="form-group">
+        <div class="form-group col-md-2">
+          <label for="ano">Ano de lançamento</label>
+          <input type="text" class="form-control" id="ano_lancamento" name="ano_lancamento" placeholder="Ano do filme/serie" value="<%= filme.ano_lancamento %>">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
 
   <p><a href="/listar">voltar</a></p>
 

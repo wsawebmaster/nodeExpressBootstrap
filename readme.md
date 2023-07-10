@@ -16,7 +16,7 @@
 
 ## Iniciar Projeto
 
-    nodemon start
+    nodemon server
 ## 💻 Projeto
 > Frontend da aplicação 📸
 
