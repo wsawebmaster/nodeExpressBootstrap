@@ -3,18 +3,30 @@
 
 <head>
   <title>
-    Listagem
+    Filmes e Séries - Listar
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
-  <h1>Página listagem</h1>
-  <p>
-    <% for(item of lista){ %>
-    <%= item.titulo %> - <%= item.ano_lancamento %> <br />
-    <% } %>
-  </p>
+  <h1>Filmes e Séries - Listar</h1>
+  <table border='1'>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Ano de Lançamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(item of lista){ %>
+        <tr>
+          <td><%= item.titulo %></td>
+          <td><%= item.ano_lancamento %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <p><a href="/">voltar</a></p>
 </body>
 
 </html>
