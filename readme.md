@@ -13,6 +13,10 @@
 
 <br />
 
+
+## Iniciar Projeto
+
+    nodemon start
 ## 💻 Projeto
 > Frontend da aplicação 📸
 
@@ -63,7 +67,7 @@ Instalar MySQL
 
 	npm install mysql
 
-Obs.: caso não consiga acesso deve adicionar o Path C:\Program Files\MySQL\MySQL Server 8.0\bin as variáveis de ambiente, acesse o powershell como administador
+Obs.: caso não consiga acesso deve adicionar o Path C:\Program Files\MySQL\MySQL Server 8.0\bin as variáveis de ambiente, acesse o powershell como administrador
 
 	C:\Program Files\MySQL\MySQL Server 8.0\bin
 	mysql -u root -p
@@ -72,6 +76,9 @@ Obs.: caso não consiga acesso deve adicionar o Path C:\Program Files\MySQL\MySQ
 
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'desenvolvedor@123';`
 
+Instalar Nodemon de forma global
+
+    npm install -g -s nodemon
 
 ---
 ---
