@@ -21,10 +21,10 @@
 > Frontend da aplicação 📸
 
 <p align="center">
-  <img alt="To-do list" src="./img/frontend.png" width="100%">
+  <img alt="To-do list" src="./public/images/frontend.png" width="100%">
 </p>
 
-[Acessar o projeto](https://wsawebmaster.github.io/portfolio/)
+<!-- [Acessar o projeto](https://wsawebmaster.github.io/portfolio/) -->
 
 <br />
 
